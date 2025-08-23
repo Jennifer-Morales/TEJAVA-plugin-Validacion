@@ -1,0 +1,149 @@
+#respuestas-container {
+    position: static; 
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 100, 255, 0.15);
+    padding: 20px;
+    margin: 25px 0 60px 0; 
+    overflow: visible; 
+    border: none;
+    margin-top: 40px; 
+    z-index: auto; 
+  }
+  
+  #resultados-estudiante {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    margin-bottom: 80px;
+  }
+  
+  /* Fondo con líneas tipo circuito digital */
+  #respuestas-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: none !important; 
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+    opacity: 0.05;
+    pointer-events: none;
+  }
+  
+  #respuestas-container > * { 
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Título principal y total */
+  #respuestas-container h3 {
+    color: white !important;
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+    padding: 15px;
+    margin: 20px 0;
+    background-color: #005b82;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 100, 255, 0.2);
+    position: relative;
+    z-index: 0;
+  }
+
+  #total h3{
+    color: white !important;
+  }
+  
+  #respuestas-container h4 {
+    color: #81bed8 !important;
+    font-size: 18px;
+    margin: 15px 0 10px 0;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #009fe3;
+    position: relative;
+    z-index: 0;
+  }
+  
+  #respuestas-container h5 {
+    background-color: #0d3f5e;
+    color: white !important;
+    padding: 10px 15px;
+    margin: 15px 0 10px 0;
+    border-left: 4px solid #009fe3;
+    font-size: 16px;
+    border-radius: 4px;
+    position: relative;
+    z-index: 2;
+  }
+  
+  #respuestas-container ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0 0 20px 0;
+  }
+  
+  #respuestas-container ul li {
+    padding: 8px 15px;
+    margin: 5px 0;
+    background-color: #2f2f2f;
+    border-left: 3px solid #005b82;
+    border-radius: 4px;
+    color: #e6f2ff;
+  }
+  
+  #mostrar-respuestas,
+  #respuestas-container button {
+    background-color: #009fe3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+    margin: 10px 0;
+    font-weight: 500;
+    position: relative;
+    z-index: 2;
+  }
+  
+  #mostrar-respuestas:hover,
+  #respuestas-container button:hover {
+    background-color: #00b3ff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 159, 227, 0.4);
+  }
+  
+  #mostrar-respuestas:active,
+  #respuestas-container button:active {
+    transform: translateY(0);
+  }
+  
+  @media screen and (max-width: 768px) {
+    #respuestas-container {
+      padding: 15px;
+    }
+  
+    #respuestas-container h3 {
+      font-size: 20px;
+      padding: 12px;
+    }
+  
+    #respuestas-container h5 {
+      font-size: 15px;
+    }
+  
+    #respuestas-container ul li {
+      padding: 8px 12px;
+    }
+  }
+
+  

@@ -1,0 +1,104 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 20px 0;
+  background-color: #2b2b2b;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+#titulo {
+    color: white !important;
+  }
+
+th {
+  background-color: #004d73;
+  color: white;
+  padding: 12px 15px;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  border: 1px solid white;
+}
+
+td {
+  padding: 10px 15px;
+  text-align: center;
+  border: 1px solid white;
+  font-size: 14px;
+}
+
+button,
+a.button,
+input[type="button"],
+input[type="submit"] {
+  background-color: #0094ff;
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  margin: 2px;
+  font-size: 13px;
+  cursor: pointer;
+  border-radius: 4px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+button:hover,
+a.button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover {
+  background-color: #007acc;
+}
+
+tr:nth-child(even) {
+  background-color: #1f1f1f;
+}
+
+
+tr:hover {
+  background-color: #3c3c3c;
+}
+
+
+@media screen and (max-width: 768px) {
+  table {
+      display: block;
+      overflow-x: auto;
+      white-space: nowrap;
+  }
+
+  th, td {
+      min-width: 120px;
+  }
+}
+
+.boton-grafico {
+  display: block;
+  margin: 10px auto;
+  padding: 12px 24px;
+  background-color: #004d73;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  max-width: 700px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.boton-grafico:hover {
+  background-color: #007acc;
+}
+
+.boton-ocultar {
+  background-color: #ff4d4d;
+}
+
+.boton-ocultar:hover {
+  background-color: #cc0000;
+}
+
+  

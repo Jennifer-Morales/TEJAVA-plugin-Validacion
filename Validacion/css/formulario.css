@@ -1,0 +1,106 @@
+
+#formulario-container {
+    position: relative;
+    background-color: #1e1e1e; /* fondo oscuro */
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 100, 255, 0.15);
+    padding: 20px;
+    margin: 25px 0;
+    overflow: hidden;
+    border: 1px solid #005b82;
+}
+
+#formulario-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(30,30,30,0.95), rgba(30,30,30,0.95)), 
+                      url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><path d="M10,30 L50,30 L50,10 L90,10" stroke="%23009fe3" stroke-width="0.5" fill="none"/><path d="M10,60 L40,60 L40,80 L90,80" stroke="%23009fe3" stroke-width="0.5" fill="none"/><path d="M10,50 L30,50 L30,20 L90,20" stroke="%23009fe3" stroke-width="0.5" fill="none"/></svg>');
+    z-index: -1;
+    opacity: 0.05;
+    pointer-events: none;
+}
+
+.AsignaturaCampo{
+    background-color: #1e1e1e;  
+    color: white !important ;             
+    border: 2px solid #0073e6;  
+    padding: 8px;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.preguntas-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 15px 0;
+}
+
+.preguntas-item {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: #e6f2ff;
+    padding: 12px 15px;
+    margin: 8px 0;
+    border-radius: 6px;
+    border-left: 3px solid #009fe3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.quepreguntas-text {
+    flex-grow: 1;
+}
+
+
+#formulario-container form {
+    background: #2b2b2b;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    color: #ffffff !important;
+}
+
+#formulario-container h2 {
+    color: #81bed8 !important;
+    margin-top: 30px;
+}
+
+#formulario-container label {
+    display: block;
+    margin-bottom: 2px;  
+    font-size: 14px;      
+}
+
+#formulario-container p {
+    margin-top: 20px;  
+    margin-bottom: 8px; 
+}
+
+#formulario-container br {
+    display: none;        
+}
+
+#formulario-container button[type="submit"] {
+    background-color: #005177;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#formulario-container button[type="submit"]:hover {
+    background-color: #003f5c;
+}
+
+
+
+
+
